@@ -4,3 +4,4 @@ créer une fonction layout pour y mettre le header et le footer passer {children
 
 on peut créer un Navbar.module.css pour le style et on importera style from 'style/Navbar.module.css' pour styliser le composant
 
+Regarder dans futured pour voir le wrapper simplifié
