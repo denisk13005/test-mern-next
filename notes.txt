@@ -1,2 +1,6 @@
 ************************mern nextJs ***************************
 
+créer une fonction layout pour y mettre le header et le footer passer {children} en props et wrapper Component dans _app.js
+
+on peut créer un Navbar.module.css pour le style et on importera style from 'style/Navbar.module.css' pour styliser le composant
+
