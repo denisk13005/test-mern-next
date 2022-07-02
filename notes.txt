@@ -14,3 +14,8 @@ on a installé mongoose
 
 on crée les schémas de données pour la page product et pour la page order 
 
+on crée un nouvelle db dans mongo on récup les id de connection, on les mets dans le .env en tant que MONGO_URL pour correspondre a la variable d'env de util/mongo.js
+
+on crée l'api pour ajouter et récupérer les pizzas directement dans api/products 
+
+on ajoute la fonction getServerSideProps pour récupérer les datas de la db dan pages/index.js
