@@ -31,5 +31,5 @@ const ProductSchema = new mongoose.Schema(
    },
    { timestamps: true } // horodate les créations et ls changements du schema product
 );
-export default mongoose.model.Product ||
+export default mongoose.models.Product ||
    mongoose.model("Product", ProductSchema); // vérifie si le schéma Product existe sinon le crée dans la bdd
