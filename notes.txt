@@ -7,3 +7,10 @@ on peut créer un Navbar.module.css pour le style et on importera style from 'st
 Regarder dans futured pour voir le wrapper simplifié
 
 dans product/[id] on a un exemple de gestion de la taille a voir !
+
+on a un fichier util qui contient une fonction qui évitera de se reconnecter tout le temps a mongo à chaque requette si on est déjà connecté !
+
+on a installé mongoose
+
+on crée les schémas de données pour la page product et pour la page order 
+
