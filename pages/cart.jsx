@@ -6,6 +6,7 @@ const Cart = () => {
       <div className={styles.container}>
          <div className={styles.left}>
             <table className={styles.table}>
+               {/* ne pas oublier la balise tbody sinon erreur d'hydratation */}
                <tbody>
                   <tr className={styles.trTitle}>
                      <th>Product</th>
