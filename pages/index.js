@@ -7,6 +7,7 @@ import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ pizzaList }) {
+   console.log(pizzaList);
    return (
       <div className={styles.container}>
          <Head>
