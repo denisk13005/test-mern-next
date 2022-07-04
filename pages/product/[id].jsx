@@ -25,7 +25,7 @@ const Product = ({ pizza }) => {
             </div>
          </div>
          <div className={styles.right}>
-            <h1 className={styles.title}>{pizza.name}</h1>
+            <h1 className={styles.title}>{pizza.title}</h1>
             <span className={styles.price}>${pizza.prices[size]}</span>
             <p className={styles.desc}>{pizza.desc}</p>
             <h3 className={styles.choose}>Choose the size</h3>
@@ -45,42 +45,17 @@ const Product = ({ pizza }) => {
             </div>
             <h3 className={styles.choose}>Choose additional ingredients</h3>
             <div className={styles.ingredients}>
-               <div className={styles.ingredientsOption}>
-                  <input
-                     type="checkbox"
-                     id="double"
-                     name="double"
-                     className={styles.checkbox}
-                  />
-                  <label htmlFor="double">double ingredient</label>
-               </div>
-               <div className={styles.ingredientsOption}>
-                  <input
-                     type="checkbox"
-                     id="cheese"
-                     name="cheese"
-                     className={styles.checkbox}
-                  />
-                  <label htmlFor="cheese">cheese</label>
-               </div>
-               <div className={styles.ingredientsOption}>
-                  <input
-                     type="checkbox"
-                     id="spicy"
-                     name="spicy"
-                     className={styles.checkbox}
-                  />
-                  <label htmlFor="spicy">spicy</label>
-               </div>
-               <div className={styles.ingredientsOption}>
-                  <input
-                     type="checkbox"
-                     id="garlic"
-                     name="garlic"
-                     className={styles.checkbox}
-                  />
-                  <label htmlFor="garlic">garlic</label>
-               </div>
+               {pizza.extraOptions.map((option) => (
+                  <div className={styles.ingredientsOption} key={option._id}>
+                     <input
+                        type="checkbox"
+                        id="double"
+                        name="double"
+                        className={styles.checkbox}
+                     />
+                     <label htmlFor="double">{option.text}</label>
+                  </div>
+               ))}
             </div>
             <div className={styles.add}>
                <input

@@ -6,7 +6,7 @@ on peut créer un Navbar.module.css pour le style et on importera style from 'st
 
 Regarder dans futured pour voir le wrapper simplifié
 
-dans product/[id] on a un exemple de gestion de la taille a voir !
+dans product/[id] on a un exemple de gestion de la taille de pizza a voir !
 
 on a un fichier util qui contient une fonction qui évitera de se reconnecter tout le temps a mongo à chaque requette si on est déjà connecté !
 
@@ -18,4 +18,6 @@ on crée un nouvelle db dans mongo on récup les id de connection, on les mets d
 
 on crée l'api pour ajouter et récupérer les pizzas directement dans api/products 
 
-on ajoute la fonction getServerSideProps pour récupérer les datas de la db dan pages/index.js
+on ajoute la fonction getServerSideProps pour récupérer les datas de la db dan pages/index.js et afficher toutes les pizzas sur la page d'acceuil en utilisant le ssr
+
+on fait pareil dans product/[id] pour récupérer les données de la pizza sélectionnée grace a params.id et à la méthode find by id dans api/products/[id]
