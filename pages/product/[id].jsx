@@ -49,11 +49,11 @@ const Product = ({ pizza }) => {
                   <div className={styles.ingredientsOption} key={option._id}>
                      <input
                         type="checkbox"
-                        id="double"
-                        name="double"
+                        id={option.text}
+                        name={option.text}
                         className={styles.checkbox}
                      />
-                     <label htmlFor="double">{option.text}</label>
+                     <label htmlFor={option.text}>{option.text}</label>
                   </div>
                ))}
             </div>
