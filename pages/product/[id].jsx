@@ -7,8 +7,9 @@ const Product = ({ pizza }) => {
    const [size, setSize] = useState(0);
    const [pizzaPrice, setPizzaPrice] = useState(pizza.prices[size]);
    const [extraOptions, setExtraOptions] = useState(0);
+   const [quantity, setQuantity] = useState(1);
 
-   const handleChange = (e, option) => {
+   const addExtraOption = (e, option) => {
       e.target.checked
          ? setExtraOptions(extraOptions + option.price)
          : setExtraOptions(extraOptions - option.price);
@@ -57,7 +58,7 @@ const Product = ({ pizza }) => {
                         id={option.text}
                         name={option.text}
                         className={styles.checkbox}
-                        onClick={(e) => handleChange(e, option)}
+                        onClick={(e) => addExtraOption(e, option)}
                      />
                      <label htmlFor={option.text}>{option.text}</label>
                   </div>
@@ -68,6 +69,7 @@ const Product = ({ pizza }) => {
                   type="number"
                   defaultValue={1}
                   className={styles.quantity}
+                  onChange={(e) => setQuantity(e.target.value)}
                />
                <button className={styles.button}>add to cart</button>
             </div>
