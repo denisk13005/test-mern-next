@@ -1,7 +1,10 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
+   const quantity = useSelector((state) => state.cart.quantity);
+   console.log(quantity);
    return (
       <div className={styles.container}>
          <div className={styles.left}>
