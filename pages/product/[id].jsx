@@ -85,8 +85,6 @@ export default Product;
  * @returns {object} pizza object
  */
 export const getServerSideProps = async ({ params }) => {
-   console.log("trst");
-   console.log(params.id);
    const res = await axios.get(
       `http://localhost:3000/api/products/${params.id}`
    );
