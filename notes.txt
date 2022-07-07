@@ -21,3 +21,11 @@ on crée l'api pour ajouter et récupérer les pizzas directement dans api/produ
 on ajoute la fonction getServerSideProps pour récupérer les datas de la db dan pages/index.js et afficher toutes les pizzas sur la page d'acceuil en utilisant le ssr
 
 on fait pareil dans product/[id] pour récupérer les données de la pizza sélectionnée grace a params.id et à la méthode find by id dans api/products/[id]
+
+on installe le package paypal avec npm i @paypal/react-paypal-js
+
+on implémente le boutton wrapper de paypal et on met le boutton paypal dans l'appli (cart ligne 11 et 176)
+
+on va sur paypal developper pour créer une appli et deux compte de démo buisiness et personnel pour simuler les transactions 
+
+
